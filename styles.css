@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+	min-height: 100vh;
+	background-color: #E0E8FF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("images/pattern-background-mobile.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.card {
+	width: 327px;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 29px;
+}
+
+.cover {
+	width: 100%;
+}
+
+.main-header {
+	margin-top: 32px;
+	font-weight: 900;
+	color: #1F2E55;
+	font-size: 22px;
+}
+
+.desc {
+	text-align: center;
+	font-weight: 500;
+	font-size: 15px;
+	color: #717FA6;
+	margin: 16px 32px 0 32px;
+	line-height: 25px;
+}
+
+.anual-plan {
+	display: flex;
+	align-items: center;
+	background-color: #F7F9FF;
+	margin: 24px 32px 0 32px;
+	border-radius: 11px;
+}
+
+.music-note-icon {
+	margin:	16px 0 16px 16px;
+}
+
+.plan-and-price {
+	margin-left: 20px;
+}
+
+.anual-plan-header {
+	color: #1F2E55;
+	font-size: 15px;
+	font-weight: 900;
+}
+
+.price-year {
+	color: #717FA6;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.change {
+	font-size: 13px;
+	font-weight: 700;
+	margin-left: 40px;
+}
+
+.proceed {
+	color: white;
+	background-color: #382AE1;
+	text-decoration: none;
+	padding: 15px 64px;
+	border-radius: 11px;
+	margin-top: 24px;
+	font-weight: 900;
+	font-size: 15px;
+}
+
+.cancel {
+	text-decoration: none;
+	color: #717FA6;
+	font-size: 15px;
+	font-weight: 900;
+	margin-top: 24px;
+	margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 1440px) {
+	.container {
+		background-image: url("images/pattern-background-desktop.svg");
+	}
+
+	.card {
+		width: 450px;
+	}
+
+	.main-header {
+		margin-top: 45px;
+		font-size: 28px;
+	}
+	
+	.desc {
+		font-size: 16px;
+		margin-left: 48px;
+		margin-right: 48px;
+		line-height: 26px;
+	}
+
+	.change {
+		margin-left: 74px;
+	}
+	
+	.change:hover {
+		text-decoration: none;
+		color: #766CF1;
+	}
+
+	.proceed {
+		padding-left: 102px;
+		padding-right: 102px;
+	}
+
+	.proceed:hover {
+		background-color: #766CF1;
+	}
+
+	.cancel:hover {
+		color: #1F2E55;
+	}
+
+}
